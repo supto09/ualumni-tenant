@@ -1,0 +1,12 @@
+### GET all tenant
+GET localhost:3001/user
+Accept: application/json
+
+
+### POST Create Tenant
+POST localhost:3001/user
+Content-Type: application/json
+
+{
+  "name": "User 3"
+}
