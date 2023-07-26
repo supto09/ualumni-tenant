@@ -9,7 +9,7 @@ COPY package.json yarn.lock ./
 
 # Install only the required dependencies (ignore dev dependencies)
 # and clean yarn cache to reduce image size
-RUN yarn install --production && yarn cache clean
+RUN yarn install && yarn cache clean
 
 # Bundle app source
 COPY . .
